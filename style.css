@@ -1,0 +1,86 @@
+/* Overall body styling */
+body {
+  font-family: 'Roboto', Arial, sans-serif;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(135deg, #4e73df, #1d68a7); /* Gradient background */
+  color: #fff;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+/* Weather container styling */
+.weather-container {
+  background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  padding: 30px;
+  border-radius: 15px;
+  width: 100%;
+  max-width: 600px;
+  transition: transform 0.3s ease; /* Smooth transformation on hover */
+}
+
+/* Heading styling */
+h1 {
+  font-size: 2.5em;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #FFD700;
+  text-transform: uppercase;
+}
+
+/* Weather details section styling */
+.weather-details {
+  font-size: 1.2em;
+  margin-top: 10px;
+}
+
+.weather-details .temp {
+  font-size: 3em;
+  font-weight: bold;
+  margin: 15px 0;
+  color: #FF6347; /* Tomato color for temperature */
+}
+
+.weather-details .description {
+  text-transform: capitalize;
+  font-style: italic;
+  margin-bottom: 15px;
+}
+
+/* Additional styling for weather icons */
+.weather-icon {
+  width: 80px;
+  height: 80px;
+  margin-bottom: 20px;
+  transition: transform 0.3s ease;
+}
+
+/* Hover effects for weather container */
+.weather-container:hover {
+  transform: scale(1.10); /* Slight zoom effect on hover */
+}
+
+/* Responsive media queries for mobile */
+@media screen and (max-width: 768px) {
+  body {
+      flex-direction: column;
+      padding: 10px;
+  }
+
+  .weather-container {
+      width: 100%;
+      padding: 20px;
+  }
+
+  h1 {
+      font-size: 2em;
+  }
+
+  .weather-details {
+      font-size: 1em;
+  }
+}
